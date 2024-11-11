@@ -261,7 +261,7 @@ sudo fc-cache -v -f
 echo "${yellow}Adding Pixelcade to Startup via pixelcade.service...${white}"
 cd ${INSTALLPATH}pixelcade/system && rm autostart.sh && rm pixelcade.service
 wget -O ${INSTALLPATH}pixelcade/system/autostart.sh https://raw.githubusercontent.com/MontesDesigns/pixelcade-linux-builds/refs/heads/main/system/autostart.sh
-wget -O ${INSTALLPATH}pixelcade/system/pixelcade.service https://github.com/MontesDesigns/pixelcade-linux-builds/blob/main/system/pixelcade.service
+wget -O ${INSTALLPATH}pixelcade/system/pixelcade.service https://raw.githubusercontent.com/MontesDesigns/pixelcade-linux-builds/refs/heads/main/system/pixelcade.service
 sudo chmod +x ${INSTALLPATH}pixelcade/system/autostart.sh # TO DO need to replace this
 sudo cp ${INSTALLPATH}pixelcade/system/pixelcade.service /etc/systemd/system/pixelcade.service
 
