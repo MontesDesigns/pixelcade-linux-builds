@@ -5,8 +5,8 @@ After=network.target
 [Service]
 User=pi
 Type=forking
-WorkingDirectory=/home/pi/pixelcade/system
-ExecStart=/home/pi/pixelcade/system/autostart.sh
+WorkingDirectory=home/pi/pixelcade/system
+ExecStart=home/pi/pixelcade/system/autostart.sh
 
 [Install]
 WantedBy=multi-user.target
