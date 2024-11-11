@@ -1,11 +1,12 @@
+
 [Unit]
 Description=Pixelcade Service
 After=network.target
 
 [Service]
 Type=forking
-ExecStart=~/pixelcade/system/autostart.sh
-WorkingDirectory=~/pixelcade/system
+ExecStart=$HOME/pixelcade/system/autostart.sh
+WorkingDirectory=$HOME/pixelcade/system
 User=pi
 
 [Install]
