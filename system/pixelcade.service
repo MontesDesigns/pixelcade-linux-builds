@@ -3,10 +3,10 @@ Description=Pixelcade Service
 After=network.target
 
 [Service]
-Type=forking
-ExecStart=/home/pi/pixelcade/system/autostart.sh
-WorkingDirectory=/home/pi/pixelcade/system
 User=pi
+Type=forking
+WorkingDirectory=/home/pi/pixelcade/system
+ExecStart=/home/pi/pixelcade/system/autostart.sh
 
 [Install]
 WantedBy=multi-user.target
