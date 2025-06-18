@@ -308,21 +308,7 @@ echo "[INFO] After purchase, you'll receive a serial code and then install with 
 echo "[INFO] cd ~/pixelcade && ./pixelweb --install-artpack <serial code>"
 
 while true; do
-    read -p "Is Pixelcade Up and Running? (y/n)" yn
-    case $yn in
-        [Yy]* ) echo "INSTALLATION COMPLETE , please now reboot" && install_succesful=true; break;;
-        [Nn]* ) echo "It may still be ok and try rebooting, you can also refer to https://pixelcade.org/download-pi/ for troubleshooting steps" && exit;;
-        * ) echo "Please answer yes or no.";;
+    echo "INSTALLATION COMPLETE, please now reboot" && install_succesful=true; break;;
     esac
 done
 
-if [ "$install_succesful" = true ] ; then
-  while true; do
-      read -p "Reboot Now? (y/n)" yn
-      case $yn in
-          [Yy]* ) reboot; break;;
-          [Nn]* ) echo "Please reboot when you get a chance" && exit;;
-          * ) echo "Please answer yes or no.";;
-      esac
-  done
-fi
