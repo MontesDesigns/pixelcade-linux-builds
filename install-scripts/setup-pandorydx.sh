@@ -287,7 +287,7 @@ if [[ -f master.zip ]]; then
     rm master.zip
 fi
 
-rm ${SCRIPTPATH}setup-pixelcade.sh
+rm ${SCRIPTPATH}setup-pandorydx.sh
 
 if [[ -d ${INSTALLPATH}ptemp ]]; then
     rm -r ${INSTALLPATH}ptemp
@@ -306,9 +306,4 @@ echo "[INFO] An LED art pack is available at https://pixelcade.org/artpack/"
 echo "[INFO] The LED art pack adds additional animated marquees for select games"
 echo "[INFO] After purchase, you'll receive a serial code and then install with this command:"
 echo "[INFO] cd ~/pixelcade && ./pixelweb --install-artpack <serial code>"
-
-while true; do
-    echo "INSTALLATION COMPLETE, please now reboot" && install_succesful=true; break;;
-    esac
-done
-
+echo "INSTALLATION COMPLETE , please reboot when you can"
